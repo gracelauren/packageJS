@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>UPS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>UPS</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a package:</h2>
+          <form id="new-package">
+            <div class="form-group">
+              <label for="new-package-length">Length:</label>
+              <input type="text" class="form-control" id="new-package-length">
+            </div>
+            <div class="form-group">
+              <label for="new-package-width">Width:</label>
+              <input type="text" class="form-control" id="new-package-width">
+            </div>
+            <div class="form-group">
+              <label for="new-package-height">Height:</label>
+              <input type="text" class="form-control" id="new-package-height">
+            </div>
+            <div class="form-group">
+              <label for="new-package-weight">Weight:</label>
+              <input type="text" class="form-control" id="new-package-weight">
+            </div>
+
+            <button type="submit" class="btn btn-success">Find Price</button>
+          </form>
+
+          <div class="col-md-6">
+            <div id="show-price">
+              <h2><span class="price"></span></h2>
+              <p>Length: <span class="length"></span></p>
+              <p>Width: <span class="width"></span></p>
+              <p>Height: <span class="height"></span></p>
+              <p>Weight: <span class="weight"></span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
