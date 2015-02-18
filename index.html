@@ -12,30 +12,30 @@
       <h1>UPS</h1>
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h2>Add a package:</h2>
           <form id="new-package">
             <div class="form-group">
               <label for="new-package-length">Length:</label>
-              <input type="text" class="form-control" id="new-package-length" autofocus required>
+              <input type="text" class="form-control" placeholder="Length in inches" id="new-package-length" autofocus required>
             </div>
             <div class="form-group">
-              <label for="new-package-width">Width in inches:</label>
-              <input type="text" class="form-control" id="new-package-width" required>
+              <label for="new-package-width">Width:</label>
+              <input type="text" class="form-control" placeholder="Width in inches" id="new-package-width" required>
             </div>
             <div class="form-group">
-              <label for="new-package-height">Height in inches:</label>
-              <input type="text" class="form-control" id="new-package-height" required>
+              <label for="new-package-height">Height:</label>
+              <input type="text" class="form-control" placeholder="Height in inches" id="new-package-height" required>
             </div>
             <div class="form-group">
-              <label for="new-package-weight">Weight in lbs:</label>
-              <input type="text" class="form-control" id="new-package-weight" required>
+              <label for="new-package-weight">Weight:</label>
+              <input type="text" class="form-control" placeholder="Weight in pounds" id="new-package-weight" required>
             </div>
 
             <button type="submit" class="btn btn-success">Find Price</button>
           </form>
-
-          <div class="col-md-6">
+        </div>
+          <div class="col-md-8">
             <div id="show-price">
               <h2>Price: $<span class="price"></span></h2>
               <p>Length: <span class="length"></span></p>
@@ -47,7 +47,6 @@
 
             </div>
           </div>
-        </div>
       </div>
     </div>
   </body>
