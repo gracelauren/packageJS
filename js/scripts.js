@@ -23,7 +23,6 @@ $(document).ready(function(){
                         + "'style='fill:rgb(164,124,72);stroke-width:3;stroke:rgb(0,0,0)'/></svg>"
                       }
                       };
-    // var draw = "<svg width=" + newPackage.width +
 
     $("input#new-package-length").val("");
     $("input#new-package-width").val("");
@@ -38,8 +37,6 @@ $(document).ready(function(){
     $(".weight").text(newPackage.weight);
     $(".draw").empty();
     $(".draw").append(newPackage.draw());
-
-
 
   });
 });
