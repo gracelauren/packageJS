@@ -17,19 +17,19 @@
           <form id="new-package">
             <div class="form-group">
               <label for="new-package-length">Length:</label>
-              <input type="text" class="form-control" placeholder="Length in inches" id="new-package-length" autofocus required>
+              <input type="number" class="form-control" placeholder="Length in inches" id="new-package-length" autofocus min=1 max=1000 required>
             </div>
             <div class="form-group">
               <label for="new-package-width">Width:</label>
-              <input type="text" class="form-control" placeholder="Width in inches" id="new-package-width" required>
+              <input type="number" class="form-control" placeholder="Width in inches" id="new-package-width" min=1 max=1000 required>
             </div>
             <div class="form-group">
               <label for="new-package-height">Height:</label>
-              <input type="text" class="form-control" placeholder="Height in inches" id="new-package-height" required>
+              <input type="number" class="form-control" placeholder="Height in inches" id="new-package-height" min=1 max=1000 required>
             </div>
             <div class="form-group">
               <label for="new-package-weight">Weight:</label>
-              <input type="text" class="form-control" placeholder="Weight in pounds" id="new-package-weight" required>
+              <input type="number" class="form-control" placeholder="Weight in pounds" id="new-package-weight" min=1 max=1000 required>
             </div>
 
             <button type="submit" class="btn btn-success">Find Price</button>
