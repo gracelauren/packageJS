@@ -37,6 +37,5 @@ $(document).ready(function(){
     $(".weight").text(newPackage.weight);
     $(".draw").empty();
     $(".draw").append(newPackage.draw());
-
   });
 });
