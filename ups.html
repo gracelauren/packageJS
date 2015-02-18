@@ -17,19 +17,19 @@
           <form id="new-package">
             <div class="form-group">
               <label for="new-package-length">Length:</label>
-              <input type="text" class="form-control" id="new-package-length">
+              <input type="text" class="form-control" id="new-package-length" autofocus required>
             </div>
             <div class="form-group">
-              <label for="new-package-width">Width:</label>
-              <input type="text" class="form-control" id="new-package-width">
+              <label for="new-package-width">Width in inches:</label>
+              <input type="text" class="form-control" id="new-package-width" required>
             </div>
             <div class="form-group">
-              <label for="new-package-height">Height:</label>
-              <input type="text" class="form-control" id="new-package-height">
+              <label for="new-package-height">Height in inches:</label>
+              <input type="text" class="form-control" id="new-package-height" required>
             </div>
             <div class="form-group">
-              <label for="new-package-weight">Weight:</label>
-              <input type="text" class="form-control" id="new-package-weight">
+              <label for="new-package-weight">Weight in lbs:</label>
+              <input type="text" class="form-control" id="new-package-weight" required>
             </div>
 
             <button type="submit" class="btn btn-success">Find Price</button>
@@ -37,11 +37,15 @@
 
           <div class="col-md-6">
             <div id="show-price">
-              <h2><span class="price"></span></h2>
+              <h2>Price: $<span class="price"></span></h2>
               <p>Length: <span class="length"></span></p>
               <p>Width: <span class="width"></span></p>
               <p>Height: <span class="height"></span></p>
               <p>Weight: <span class="weight"></span></p>
+
+              <span class="draw"></span>
+
+
             </div>
           </div>
         </div>
